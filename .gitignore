@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+### Específico de este proyecto (Deep Learning) ###
+
+# Datos y modelos entrenados (no versionar archivos pesados,
+# solo se conserva la estructura de carpetas vía .gitkeep)
+data/**
+!data/**/
+!data/**/.gitkeep
+
+models/**
+!models/**/
+!models/**/.gitkeep
+
+# Pesos y checkpoints de modelos
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.onnx
+*.pkl
+*.joblib
+
+# Logs y tracking de experimentos
+logs/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+outputs/
